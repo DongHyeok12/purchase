@@ -1,0 +1,201 @@
+/* 전체 배경 및 폰트 */
+body {
+  margin: 0;
+  background: #fff0f6;
+  font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 코드 폰트 */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* 상단 네임바 */
+.TopName {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #d65d5d;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* 공통 컨테이너 */
+.signup-container,
+.loginPage {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 36px 30px;
+  background: #fff0f6;
+  border-radius: 18px;
+  text-align: center;
+}
+
+/* 제목 */
+.signup-container h2,
+.loginPage h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #d65d5d;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* 입력 필드 */
+.signup-field,
+.loginInput {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.signup-field label,
+.loginInput label {
+  font-size: 15px;
+  color: #d65d5d;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 7px;
+}
+
+/* 입력창 */
+.signup-input,
+.loginInput input,
+.loginInput .ant-input,
+.loginInput .ant-input-password {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1.5px solid #f8bbd0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 15px;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 7px;
+}
+
+.signup-input:focus,
+.loginInput input:focus,
+.loginInput .ant-input:focus,
+.loginInput .ant-input-password:focus {
+  border-color: #d65d5d;
+  outline: none;
+}
+
+/* 버튼 스타일 */
+.signup-btn,
+.loginButton,
+.singUp {
+  display: inline-block;
+  width: 100%;
+  min-width: 110px;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  background: #d65d5d;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.signup-btn:disabled,
+.loginButton:disabled,
+.singUp:disabled {
+  background: #f8bbd0;
+  color: #fff0f6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.signup-btn:hover:not(:disabled),
+.loginButton:hover:not(:disabled),
+.singUp:hover:not(:disabled) {
+  background: #c2185b;
+  box-shadow: 0 4px 16px rgba(214, 93, 93, 0.12);
+}
+
+/* 네이버 로그인 버튼 */
+.naverLogin {
+  display: inline-block;
+  width: 100%;
+  min-width: 110px;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  background: #19ce60;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 30px;
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.naverLogin:hover {
+  background: #17b75e;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(25, 206, 96, 0.12);
+}
+
+/* 에러 메시지 */
+.signup-field div,
+.loginInput div {
+  font-size: 13px;
+  color: #c2185b;
+  margin-top: 4px;
+}
+
+/* 링크 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 반응형 */
+@media (max-width: 500px) {
+  .signup-container,
+  .loginPage {
+    padding: 18px 8px;
+  }
+  .signup-container h2,
+  .loginPage h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* mainPage.css */
+.main-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 0;
+}
+
+.main-content {
+  background: #fff0f6;
+  padding: 36px 30px;
+  text-align: center;
+}
+
+.main-content h2 {
+  color: #d65d5d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.main-desc {
+  color: #c2185b;
+  font-size: 16px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
